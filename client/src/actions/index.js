@@ -5,9 +5,9 @@ export const FETCH_SUCCESS = "FETCH_SUCCESS";
 export const FETCH_TOGGLE = "FETCH_TOGGLE";
 
 // This is an async action creator.
-export const asyncAction = () => dispatch => {
+export const fetchKanye = () => dispatch => {
 	dispatch({ type: FETCH_TOGGLE });
-	axios.get('https://api.kanye.rest/')
+	axios.get('https://cors-anywhere.herokuapp.com/' + 'https://api.kanye.rest/')
 		.then(res => dispatch({ type: FETCH_SUCCESS, payload: res.data.quote }))
 		.catch(err => dispatch({ type: FETCH_TOGGLE, payload: err }))
 };

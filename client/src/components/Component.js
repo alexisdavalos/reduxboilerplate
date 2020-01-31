@@ -1,12 +1,18 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {connect} from 'react-redux';
-import {asyncAction, actionName} from '../actions'
+import {fetchKanye, actionName} from '../actions'
 
 const Component = (props) =>{
-  console.log(props)
+  console.log(props.kanyeism)
+
+  useEffect(()=>{
+    props.fetchKanye();
+  },[props.fetchKanye])
+
     return(
-        <div>
-            <p>{props.kanyeism}</p>
+        <div className='App-Redux'>
+          <h3>This Quote Is Brought To You By: Redux</h3>
+            <p>"{props.kanyeism}"- Kanye West</p>
         </div>
     )
 }
@@ -21,5 +27,5 @@ const mapStateToProps = state => {
 export default connect(
 mapStateToProps,
 //place imported actions below
-{asyncAction, actionName}
+{fetchKanye, actionName}
 )(Component);
