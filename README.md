@@ -1,4 +1,4 @@
-# Project Title
+# Redux Boiler Plate
 
 One Paragraph of project description goes here
 
