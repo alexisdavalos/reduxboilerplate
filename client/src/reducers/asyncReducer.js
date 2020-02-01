@@ -7,7 +7,7 @@ const initialState = {
   isFetching: false
 }
 
-const asyncReducer = (state = initialState, action) => {
+export const asyncReducer = (state = initialState, action) => {
 	switch(action.type){
 		case FETCH_TOGGLE:
 			return {
@@ -27,4 +27,3 @@ const asyncReducer = (state = initialState, action) => {
 	}
 }
 	
-export default asyncReducer;

@@ -4,7 +4,7 @@ const initialState = {
   date: Date.now()
 };
 
-const newReducer = (state = initialState, action) => {
+export const syncReducer = (state = initialState, action) => {
   switch (action.type) {
     case ACTION_NAME:
       return {
@@ -15,5 +15,3 @@ const newReducer = (state = initialState, action) => {
       return state;
   }
 };
-
-export default newReducer;

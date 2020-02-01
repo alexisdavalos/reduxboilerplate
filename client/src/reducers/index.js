@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
-import asyncReducer from './asyncReducer'
-import syncReducer from './syncReducer'
+import {asyncReducer} from './asyncReducer'
+import {syncReducer} from './syncReducer'
 // You'll also need to import any other necessary custom reducers.
 
 const rootReducer = combineReducers({
