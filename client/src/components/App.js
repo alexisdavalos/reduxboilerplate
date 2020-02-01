@@ -8,6 +8,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <Component/>
         <p>
           Edit <code>src/components/App.js</code> and save to reload.
         </p>
@@ -19,7 +20,6 @@ function App() {
         >
           Learn React
         </a>
-        <Component/>
       </header>
     </div>
   );
