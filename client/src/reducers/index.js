@@ -4,8 +4,8 @@ import syncReducer from './syncReducer'
 // You'll also need to import any other necessary custom reducers.
 
 const rootReducer = combineReducers({
-    asyncReducer,
-    syncReducer
+    async: asyncReducer,
+    sync: syncReducer
 	// Include any other reducers required by your application.
 });
 
