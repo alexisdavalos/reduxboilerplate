@@ -3,11 +3,11 @@ import {connect} from 'react-redux';
 import {fetchKanye, actionName} from '../actions'
 
 const Component = (props) =>{
-  console.log(props.kanyeism)
 
+  const fetchKanye = props.fetchKanye;
   useEffect(()=>{
-    props.fetchKanye();
-  },[props.fetchKanye])
+    fetchKanye();
+  },[fetchKanye])
 
     return(
         <div className='App-Redux'>
