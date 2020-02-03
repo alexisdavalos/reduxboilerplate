@@ -12,12 +12,13 @@ These instructions will get you a copy of the project up and running on your loc
 ### Installing
 
 A step by step series of examples that tell you how to get a development env running
+`cd` into client folder and install dependencies with:
 
 ```
 yarn or npm install
 ```
 
-Then cd into client folder and
+Then start the development environment with: 
 
 ```
 yarn or npm start
